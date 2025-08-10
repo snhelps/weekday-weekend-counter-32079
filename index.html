@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekday & Weekend Counter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekday & Weekend Counter</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>📅 Weekday & Weekend Counter</h1>
-    <div class="container">
-        <label for="month">Select Month:</label>
-        <select id="month">
-            <option value="0">January</option>
-            <option value="1">February</option>
-            <option value="2">March</option>
-            <option value="3">April</option>
-            <option value="4">May</option>
-            <option value="5">June</option>
-            <option value="6">July</option>
-            <option value="7">August</option>
-            <option value="8">September</option>
-            <option value="9">October</option>
-            <option value="10">November</option>
-            <option value="11">December</option>
-        </select>
+  <h1>📅 Weekday & Weekend Counter</h1>
 
-        <label for="year">Select Year:</label>
-        <input type="number" id="year" value="2025" min="1900" max="2100">
+  <div class="container">
+    <label for="months">Select Month(s):</label>
+    <select id="months" multiple size="6">
+      <option value="0">January</option>
+      <option value="1">February</option>
+      <option value="2">March</option>
+      <option value="3">April</option>
+      <option value="4">May</option>
+      <option value="5">June</option>
+      <option value="6">July</option>
+      <option value="7">August</option>
+      <option value="8">September</option>
+      <option value="9">October</option>
+      <option value="10">November</option>
+      <option value="11">December</option>
+    </select>
 
-        <button onclick="calculateDays()">Calculate</button>
-    </div>
+    <label for="years">Select Year(s):</label>
+    <select id="years" multiple size="6"></select>
 
-    <div id="results"></div>
+    <button onclick="calculateDays()">Calculate</button>
+  </div>
 
-    <script src="script.js"></script>
+  <div id="results"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
